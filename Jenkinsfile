@@ -32,6 +32,11 @@ def envProd = utils.environmentNamespace('run')
 def stashName = ""
 
 mavenNode {
+    properties(
+        [
+            pipelineTriggers([cron('*/30 * * * *')]),
+        ]
+    )
   checkout scm
   if (utils.isCI()){
 
