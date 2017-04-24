@@ -68,13 +68,13 @@ mavenNode {
   }
 
   node {
-      stage('Approve')
-      approve {
-        room = null
-        version = canaryVersion
-        console = fabric8Console
-        environment = 'Stage'
-      }
+ //     stage('Approve')
+ //     approve {
+ //      room = null
+ //       version = canaryVersion
+ //       console = fabric8Console
+ //       environment = 'Stage'
+ //     }
 
       stage('Rollout to Run')
       unstash stashName
