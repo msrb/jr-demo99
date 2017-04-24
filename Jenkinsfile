@@ -32,6 +32,7 @@ def envProd = utils.environmentNamespace('run')
 def stashName = ""
 
 mavenNode {
+  echo "${env.getEnvironment()}"
   checkout scm
   if (utils.isCI()){
 
