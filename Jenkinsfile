@@ -58,7 +58,7 @@ mavenNode {
       kubernetesApply(environment: envStage)
       //stash deployments
       stashName = label
-      stash includes: '**/*', name: stashName
+      stash includes: '**/*.yml', name: stashName
     }
   }
 
