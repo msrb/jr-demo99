@@ -34,7 +34,7 @@ def stashName = ""
 mavenNode {
     properties(
         [
-            pipelineTriggers([cron('*/4 * * * *')]),
+//            pipelineTriggers([cron('*/4 * * * *')]),
         ]
     )
   checkout scm
